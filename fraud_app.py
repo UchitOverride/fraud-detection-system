@@ -798,6 +798,23 @@ elif page == "📈 Results & Analysis":
 
 # Footer
 st.markdown("---")
+st.markdown("### 🔗 Project Links")
+
+link_col1, link_col2, link_col3 = st.columns(3)
+
+with link_col1:
+    st.markdown("**🌐 Live Application**")
+    st.markdown("[fraud-detection-barot.streamlit.app](https://fraud-detection-barot.streamlit.app)")
+
+with link_col2:
+    st.markdown("**💻 GitHub Repository**")
+    st.markdown("[UchitOverride/fraud-detection-system](https://github.com/UchitOverride/fraud-detection-system)")
+
+with link_col3:
+    st.markdown("**📊 Dataset Source**")
+    st.markdown("[Kaggle Credit Card Fraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)")
+
+st.markdown("---")
 st.markdown("### 📞 Contact & Links")
 footer_col1, footer_col2, footer_col3 = st.columns(3)
 
