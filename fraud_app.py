@@ -52,8 +52,19 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Title
-st.markdown('<div class="main-header">🔒 Credit Card Fraud Detection System</div>', unsafe_allow_html=True)
+# Header with Logo
+col_logo, col_title = st.columns([1, 4])
+
+with col_logo:
+    st.image("logo.png", width=120)
+
+with col_title:
+    st.markdown("""
+        <div class="main-header">
+        🔒 Credit Card Fraud Detection System
+        </div>
+    """, unsafe_allow_html=True)
+
 st.markdown("### 🎓 Machine Learning Project - Banking Security")
 
 # Sidebar Navigation
